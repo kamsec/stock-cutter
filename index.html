@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+
+ <html lang="pl">
+ <head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="github.com/kamsec">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Bootstrap v5.0.2 (https://getbootstrap.com/) | Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="src/style.css" type="text/css" />
+	
+	<!-- jQuery v3.4.1 | (c) JS Foundation and other contributors | jquery.org/license -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div class="main-wrapper">
+		<div class="row text-center my-1"><h1>stock-cutter</h1></div>
+		<div id="container" class="container">
+			<div class="row" style="margin: 0 auto;">
+				<div id="inputs" class="col-lg-4 mb-3">
+					<form>
+						<div id="input-top">
+						Length of material to be cut:
+						<input type="text" id="input-max-length" value="6000"/>
+						</div>
+						
+						</br>
+
+						<div style="display:inline-block; margin-left:34px; width:86px;">Length of pieces:</div><div style="display:inline-block; margin-left:0px; width:86px;">Amount of pieces:</div>
+
+					<ol id="inputCutList">
+					
+						<li>
+						<input type="text" id="input-length-0" />
+						<input type="text" id="input-amount-0" /></li>
+						
+						<li>
+						<input type="text" id="input-length-1" />
+						<input type="text" id="input-amount-1" /></li>
+						
+						<li>
+						<input type="text" id="input-length-2" />
+						<input type="text" id="input-amount-2" /></li>
+						
+						<li>
+						<input type="text" id="input-length-3" />
+						<input type="text" id="input-amount-3" /></li>
+						
+						<li>
+						<input type="text" id="input-length-4" />
+						<input type="text" id="input-amount-4" /></li>
+						
+						<li>
+						<input type="text" id="input-length-5" />
+						<input type="text" id="input-amount-5" /></li>
+						
+						<li>
+						<input type="text" id="input-length-6" />
+						<input type="text" id="input-amount-6" /></li>
+						
+						<li>
+						<input type="text" id="input-length-7" />
+						<input type="text" id="input-amount-7" /></li>
+						
+						<li>
+						<input type="text" id="input-length-8" />
+						<input type="text" id="input-amount-8" /></li>
+						
+						<li>
+						<input type="text" id="input-length-9"/>
+						<input type="text" id="input-amount-9"/><input type="button" id="input-minus-9" value="-"/><input type="button" id="input-plus-9" value="+"/>
+						</li>
+
+
+					</ol>
+					<div id="input-bottom">
+						<input type="reset" class="input-button" value="Reset" style="background-color:#dd524d"/>
+						<input type="button" class="input-button" value="Cut" style="background-color:#4ccf53"/>
+					</div>
+					</form>
+					
+				</div>
+				<div id="results" class="col-lg-8">
+					<form>
+						<textarea style="min-width:100%;  min-height: 450px" id="results-area" placeholder="Result..." wrap="off"></textarea>
+						<input type="reset" class="input-button-2" value="Clear" style="background-color:#dd524d"/>
+						<input type="button" class="input-button-2" value="Copy" id="copy-to-clip" style="background-color:#4ccf53"/>
+						<input type="button" class="input-button-2" value="Print" id="copy-to-clip" style="background-color:#4ccf53"/>
+					</form>
+					Material loss per cut is not counted.
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="src/script.js"></script>
+	<script src="src/algorithm.js"></script>
+
+</body>
+
+ 
+</html>
+ 
+ 
